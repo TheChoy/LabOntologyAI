@@ -1,0 +1,433 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.my_ontology.edu/mytourism#"
+     xml:base="http://www.my_ontology.edu/mytourism"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:tourism="http://www.my_ontology.edu/mytourism#">
+    <owl:Ontology rdf:about="http://www.my_ontology.edu/mytourism"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#hasFlower -->
+
+    <owl:DatatypeProperty rdf:about="http://www.my_ontology.edu/mytourism#hasFlower">
+        <rdfs:domain rdf:resource="http://www.my_ontology.edu/mytourism#ThaiProvince"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ดอกไม้ประจำจังหวัด</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#hasImageOfProvince -->
+
+    <owl:DatatypeProperty rdf:about="http://www.my_ontology.edu/mytourism#hasImageOfProvince">
+        <rdfs:domain rdf:resource="http://www.my_ontology.edu/mytourism#ThaiProvince"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ชื่อรูปภาพของจังหวัด</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#hasLatitudeOfProvince -->
+
+    <owl:DatatypeProperty rdf:about="http://www.my_ontology.edu/mytourism#hasLatitudeOfProvince">
+        <rdfs:domain rdf:resource="http://www.my_ontology.edu/mytourism#ThaiProvince"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">พิกัดละติจูดของจังหวัด</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#hasLongitudeOfProvince -->
+
+    <owl:DatatypeProperty rdf:about="http://www.my_ontology.edu/mytourism#hasLongitudeOfProvince">
+        <rdfs:domain rdf:resource="http://www.my_ontology.edu/mytourism#ThaiProvince"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">พิกัดลองจิจูดของจังหวัด</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#hasMotto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.my_ontology.edu/mytourism#hasMotto">
+        <rdfs:domain rdf:resource="http://www.my_ontology.edu/mytourism#ThaiProvince"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">คำขวัญของจังหวัด</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#hasNameOfProvince -->
+
+    <owl:DatatypeProperty rdf:about="http://www.my_ontology.edu/mytourism#hasNameOfProvince">
+        <rdfs:domain rdf:resource="http://www.my_ontology.edu/mytourism#ThaiProvince"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ชื่อจังหวัด</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#hasSeal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.my_ontology.edu/mytourism#hasSeal">
+        <rdfs:domain rdf:resource="http://www.my_ontology.edu/mytourism#ThaiProvince"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">สัญลักษณ์ประจำจังหวัด</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#hasTraditionalNameOfProvince -->
+
+    <owl:DatatypeProperty rdf:about="http://www.my_ontology.edu/mytourism#hasTraditionalNameOfProvince">
+        <rdfs:domain rdf:resource="http://www.my_ontology.edu/mytourism#ThaiProvince"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ชื่ออื่น ๆ ของจังหวัด</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#hasTree -->
+
+    <owl:DatatypeProperty rdf:about="http://www.my_ontology.edu/mytourism#hasTree">
+        <rdfs:domain rdf:resource="http://www.my_ontology.edu/mytourism#ThaiProvince"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ต้นไม้ประจำจังหวัด</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#hasURLOfProvince -->
+
+    <owl:DatatypeProperty rdf:about="http://www.my_ontology.edu/mytourism#hasURLOfProvince">
+        <rdfs:domain rdf:resource="http://www.my_ontology.edu/mytourism#ThaiProvince"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ชื่อเว็บไซต์ของจังหวัด</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#ThaiAccomodation -->
+
+    <owl:Class rdf:about="http://www.my_ontology.edu/mytourism#ThaiAccomodation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#ThaiAmphoe -->
+
+    <owl:Class rdf:about="http://www.my_ontology.edu/mytourism#ThaiAmphoe">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#ThaiAttraction -->
+
+    <owl:Class rdf:about="http://www.my_ontology.edu/mytourism#ThaiAttraction">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#ThaiOTOP -->
+
+    <owl:Class rdf:about="http://www.my_ontology.edu/mytourism#ThaiOTOP">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#ThaiProvince -->
+
+    <owl:Class rdf:about="http://www.my_ontology.edu/mytourism#ThaiProvince">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#ThaiRestaurant -->
+
+    <owl:Class rdf:about="http://www.my_ontology.edu/mytourism#ThaiRestaurant">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#ThaiSouvenir -->
+
+    <owl:Class rdf:about="http://www.my_ontology.edu/mytourism#ThaiSouvenir">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#ThaiTambon -->
+
+    <owl:Class rdf:about="http://www.my_ontology.edu/mytourism#ThaiTambon">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#ChiangMai -->
+
+    <owl:NamedIndividual rdf:about="http://www.my_ontology.edu/mytourism#ChiangMai">
+        <rdf:type rdf:resource="http://www.my_ontology.edu/mytourism#ThaiProvince"/>
+        <hasFlower xml:lang="en">Bastard Teak</hasFlower>
+        <hasFlower xml:lang="th">ทองกวาว</hasFlower>
+        <hasImageOfProvince xml:lang="en">chiangmai.jpg</hasImageOfProvince>
+        <hasImageOfProvince xml:lang="th">chiangmai.jpg</hasImageOfProvince>
+        <hasLatitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.8</hasLatitudeOfProvince>
+        <hasLongitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">98.98</hasLongitudeOfProvince>
+        <hasMotto xml:lang="en">
+Doi Sutep is Honor,
+Tradition is Elegant,
+Blossoms are Beautiful,
+Precious Name Nakhon Ping
+</hasMotto>
+        <hasMotto xml:lang="th">
+ดอยสุเทพเป็นศรี
+ประเพณีเป็นสง่า
+บุปผชาติล้วนงามตา 
+นามล้ำค่านครพิงค์
+</hasMotto>
+        <hasNameOfProvince xml:lang="en">Chiang Mai</hasNameOfProvince>
+        <hasNameOfProvince xml:lang="th">เชียงใหม่</hasNameOfProvince>
+        <hasSeal xml:lang="en">White Elephant in Glass Cover</hasSeal>
+        <hasSeal xml:lang="th">ช้างเผือกในเรือนแก้ว</hasSeal>
+        <hasTraditionalNameOfProvince xml:lang="en">Jeang Mai</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="en">Nop Buri Sri Nakhon Ping Chiang Mai</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="en">Rattana Tingsa Api Nawaburi Chiang Mai</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="en">Veang Ping</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">นพบุรีศรีนครพิงค์เชียงใหม่</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">รัตนติงสาอภินวบุรีเชียงใหม่</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">เจียงใหม่</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">เวียงพิงค์</hasTraditionalNameOfProvince>
+        <hasTree xml:lang="en">Bastard Teak</hasTree>
+        <hasTree xml:lang="th">ทองกวาว</hasTree>
+        <hasURLOfProvince xml:lang="en">http://www.chiangmai.go.th</hasURLOfProvince>
+        <hasURLOfProvince xml:lang="th">http://www.chiangmai.go.th</hasURLOfProvince>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#NakhonSawan -->
+
+    <owl:NamedIndividual rdf:about="http://www.my_ontology.edu/mytourism#NakhonSawan">
+        <rdf:type rdf:resource="http://www.my_ontology.edu/mytourism#ThaiProvince"/>
+        <hasFlower xml:lang="th">เสลา</hasFlower>
+        <hasImageOfProvince xml:lang="en">nakhonsawan.jpg</hasImageOfProvince>
+        <hasImageOfProvince xml:lang="th">nakhonsawan.jpg</hasImageOfProvince>
+        <hasLatitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.7</hasLatitudeOfProvince>
+        <hasLongitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.07</hasLongitudeOfProvince>
+        <hasMotto xml:lang="en">
+Quad CityRiver,
+Dragon Parade,
+Bungborapet Rest,
+Good Taste Fish of Paknampho
+</hasMotto>
+        <hasMotto xml:lang="th">
+เมืองสี่แคว
+แห่มังกร
+พักผ่อนบึงบอระเพ็ด
+ปลารสเด็ดปากน้ำโพ
+</hasMotto>
+        <hasNameOfProvince xml:lang="en">Nakhon Sawan</hasNameOfProvince>
+        <hasNameOfProvince xml:lang="th">นครสวรรค์</hasNameOfProvince>
+        <hasSeal xml:lang="en">Sky Castle</hasSeal>
+        <hasSeal xml:lang="th">วิมานลอย</hasSeal>
+        <hasTraditionalNameOfProvince xml:lang="en">Chon Ta Wan City</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="en">Pak Nam Pho</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="en">Pra Bang City</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="en">See Kwae City</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">ปากน้ำโพ</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">เมืองชอนตะวัน</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">เมืองพระบาง</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">เมืองสี่แคว</hasTraditionalNameOfProvince>
+        <hasTree xml:lang="en">Lagerstroemia loudoni</hasTree>
+        <hasTree xml:lang="th">เสลา</hasTree>
+        <hasURLOfProvince xml:lang="en">http://www.nakhonsawan.go.th</hasURLOfProvince>
+        <hasURLOfProvince xml:lang="th">http://www.nakhonsawan.go.th</hasURLOfProvince>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#Phitsanulok -->
+
+    <owl:NamedIndividual rdf:about="http://www.my_ontology.edu/mytourism#Phitsanulok">
+        <rdf:type rdf:resource="http://www.my_ontology.edu/mytourism#ThaiProvince"/>
+        <hasFlower xml:lang="en">Lagerstroemia loudoni</hasFlower>
+        <hasFlower xml:lang="en">Yellow Flamboyant</hasFlower>
+        <hasFlower xml:lang="th">นนทรี</hasFlower>
+        <hasImageOfProvince xml:lang="en">phitsanulok.jpg</hasImageOfProvince>
+        <hasImageOfProvince xml:lang="th">phitsanulok.jpg</hasImageOfProvince>
+        <hasLatitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.82</hasLatitudeOfProvince>
+        <hasLongitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.27</hasLongitudeOfProvince>
+        <hasMotto xml:lang="en">
+Great Buddha Chin Na Raj,
+King Naresuan Birthplace,
+Houseboat in two sides of Nan River,
+Pure Luscious Dried Banana,
+Beautiful Caves and Waterfalls
+</hasMotto>
+        <hasMotto xml:lang="th">
+พระพุทธชินราชงามเลิศ
+ถิ่นก้าเนิดพระนเรศวร
+สองฝั่งน่านล้วนเรือนแพ
+หวานฉ่ำแท้กล้วยตาก
+ถ้ำและน้ำตกหลากตระการตา
+</hasMotto>
+        <hasNameOfProvince xml:lang="en">Phitsanulok</hasNameOfProvince>
+        <hasNameOfProvince xml:lang="th">พิษณุโลก</hasNameOfProvince>
+        <hasSeal xml:lang="en">Image of Buddha Chin Na Raj</hasSeal>
+        <hasSeal xml:lang="th">พระพุทธชินราช</hasSeal>
+        <hasTraditionalNameOfProvince xml:lang="en">Pitlok</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="en">Pra Phitsanulok Song Kwae City</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="en">Song Kwae</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="en">Sra Loung Song Kwae City</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">นครพิษณุโลกสองแคว</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">นครสระหลวงสองแคว</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">พิดโลก</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">สองแคว</hasTraditionalNameOfProvince>
+        <hasTree xml:lang="en">Indian Corck Tree</hasTree>
+        <hasTree xml:lang="th">ปีป</hasTree>
+        <hasURLOfProvince xml:lang="en">http://www.phitsanulok.go.th</hasURLOfProvince>
+        <hasURLOfProvince xml:lang="th">http://www.phitsanulok.go.th</hasURLOfProvince>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#Pichit -->
+
+    <owl:NamedIndividual rdf:about="http://www.my_ontology.edu/mytourism#Pichit">
+        <rdf:type rdf:resource="http://www.my_ontology.edu/mytourism#ThaiProvince"/>
+        <hasFlower xml:lang="en">Nymphaea lotus</hasFlower>
+        <hasFlower xml:lang="th">ดอกบัวหลวง</hasFlower>
+        <hasImageOfProvince xml:lang="en">pichit.jpg</hasImageOfProvince>
+        <hasImageOfProvince xml:lang="th">pichit.jpg</hasImageOfProvince>
+        <hasLatitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.44</hasLatitudeOfProvince>
+        <hasLongitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.35</hasLongitudeOfProvince>
+        <hasMotto xml:lang="en">
+Birthplace of King Sanphet VIII,
+Boat Racing Festival,
+Good Buddhism Amulet,
+Bung See Fai Rest,
+Loung Por Phet’s Unity Center,
+Good Taste Ta Koi’s Grapefruit,
+Famous Rice,
+Legend of Cha La Wan the Crocodile
+</hasMotto>
+        <hasMotto xml:lang="th">
+ถิ่นประสูติพระเจ้าเสือ 
+แข่งเรือยาวประเพณี 
+พระเครื่องดีหลวงพ่อเงิน 
+เพลิดเพลินบึงสีไฟ
+ศูนย์รวมใจหลวงพ่อเพชร
+รสเด็ดส้มท่าข่อย 
+ข้าวเจ้าอร่อยลือเลื่อง 
+ตำนานเมืองชาละวัน
+</hasMotto>
+        <hasNameOfProvince xml:lang="en">Phichit</hasNameOfProvince>
+        <hasNameOfProvince xml:lang="th">พิจิตร</hasNameOfProvince>
+        <hasSeal xml:lang="en">Sacred fig Tree and Sra Loung Pool</hasSeal>
+        <hasSeal xml:lang="th">ต้นโพธิ์ริมสระหลวง</hasSeal>
+        <hasTraditionalNameOfProvince xml:lang="en">Cha La Wan City</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="en">City of Crocodiles</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">เมืองจระเข้</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">เมืองชาละวัน</hasTraditionalNameOfProvince>
+        <hasTree xml:lang="en">Mesua Ferrea</hasTree>
+        <hasTree xml:lang="th">บุญนาค</hasTree>
+        <hasURLOfProvince xml:lang="en">http://www.phichit.go.th</hasURLOfProvince>
+        <hasURLOfProvince xml:lang="th">http://www.phichit.go.th</hasURLOfProvince>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.my_ontology.edu/mytourism#Uthaithani -->
+
+    <owl:NamedIndividual rdf:about="http://www.my_ontology.edu/mytourism#Uthaithani">
+        <rdf:type rdf:resource="http://www.my_ontology.edu/mytourism#ThaiProvince"/>
+        <hasFlower xml:lang="en">Yellow Silk Cotton</hasFlower>
+        <hasFlower xml:lang="th">สุพรรณิการ์</hasFlower>
+        <hasImageOfProvince xml:lang="en">uthaithani.jpg</hasImageOfProvince>
+        <hasImageOfProvince xml:lang="th">uthaithani.jpg</hasImageOfProvince>
+        <hasLatitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.38</hasLatitudeOfProvince>
+        <hasLongitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.03</hasLongitudeOfProvince>
+        <hasMotto xml:lang="en">
+Uthai Thani,
+City of The Grand Primordial Father,
+Good Taste Giant Gourami Fish,
+World Heritage Huai Kha Kang,
+Watersheds Sa Kae Krang,
+Famous Cattle Buffalos Market
+</hasMotto>
+        <hasMotto xml:lang="th">
+อุทัยธานี
+เมืองพระชนกจักรี 
+ปลาแรดรสดี
+ประเพณีเทโว 
+ส้มโอบ้านน้ำตก
+มรดกโลกห้วยขาแข้ง 
+แหล่งต้นน้ำสะแกกรัง 
+ตลาดนัดดังโคกระบือ
+</hasMotto>
+        <hasNameOfProvince xml:lang="en">Uthaithani</hasNameOfProvince>
+        <hasNameOfProvince xml:lang="th">อุทัยธานี</hasNameOfProvince>
+        <hasSeal xml:lang="en">The Grand Primordial Father&apos;s Shrine in front of Sa Kae Krang Mountain</hasSeal>
+        <hasSeal xml:lang="th">ศาลพระชนกจักรีหน้าเขาสะแกกรัง</hasSeal>
+        <hasTraditionalNameOfProvince xml:lang="en">City of The Grand Primordial Father</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="en">U Tai</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="en">Uthai</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">อุทัย</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">อุไทย</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">เมืองพระชนกจักรี</hasTraditionalNameOfProvince>
+        <hasTree xml:lang="en">Neem Plant</hasTree>
+        <hasTree xml:lang="th">สะเดา</hasTree>
+        <hasURLOfProvince xml:lang="en">http://www.uthaithani.go.th</hasURLOfProvince>
+        <hasURLOfProvince xml:lang="th">http://www.uthaithani.go.th</hasURLOfProvince>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

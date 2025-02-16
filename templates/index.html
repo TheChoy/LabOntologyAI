@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+
+<head>
+    <meta charset="UTF-8"> <!-- กำหนดการเข้ารหัสของเอกสารให้เป็น UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- กำหนดการแสดงผลให้เหมาะสมกับขนาดหน้าจอของอุปกรณ์ -->
+    <title>Ontologyจังหวัด</title> <!-- ชื่อของหน้าเว็บไซต์ -->
+    <link rel="stylesheet" href="../static/style.css"> <!-- ลิงก์ไปยังไฟล์ CSS สำหรับตกแต่งหน้าเว็บไซต์ -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    
+</head>
+
+<body>
+    <br> <!-- ใช้สำหรับเพิ่มช่องว่างในแนวตั้ง -->
+    <h2><i class="fa-solid fa-map-location-dot"></i> {{ 'ค้นหาจังหวัดที่ต้องการ' if lang == 'th' else 'Search for the desired province.' }}  </h2> <!-- แสดงข้อความหัวข้อที่แปลตามภาษา -->
+    <form method="POST" action="/"> <!-- ฟอร์มสำหรับค้นหาจังหวัด -->
+        <input type="text" name="query" placeholder="พิมพ์ชื่อจังหวัด..." required>
+        <!-- ช่องกรอกข้อความสำหรับค้นหาชื่อจังหวัด -->
+        <input type="hidden" name="lang" value="{{ lang }}"> <!-- ฟิลด์ซ่อนสำหรับเก็บภาษาที่เลือก (ไทย/อังกฤษ) -->
+        <button type="submit" value="Search">{{ 'ค้นหา' if lang == 'th' else 'Search' }} <i class="fa-solid fa-search"></i></button>
+        <!-- ปุ่มค้นหาที่แสดงข้อความตามภาษาที่เลือก -->
+        <p>{{ 'ค้นหาด้วยภาษา : ไทย' if lang == 'th' else 'Search by language : English' }}</p>
+        <!-- แสดงข้อความบอกภาษาที่ใช้ค้นหา -->
+        <a href="?lang=th">ไทย</a> | <a href="?lang=en">English</a> <!-- ลิงก์สำหรับเปลี่ยนภาษา -->
+    </form>
+
+    <table>
+        <thead>
+            <h3>{{ results[1] if lang == 'th' else results[5] }}</h3> <!-- แสดงหัวข้อผลลัพธ์การค้นหา -->
+        </thead>
+        <tbody id="results">
+            {% if results %} <!-- ตรวจสอบว่ามีผลลัพธ์การค้นหาหรือไม่ -->
+            <table>
+                <thead>
+                    <tr>
+                        <th style="font-weight: bold;">{{ 'หัวข้อ' if lang == 'th' else 'Topics' }}</th>
+                        <!-- หัวข้อของตาราง -->
+                        <th style="font-weight: bold;">{{ 'รายละเอียด' if lang == 'th' else 'Details' }}</th>
+                        <!-- รายละเอียดของตาราง -->
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for result in results %} <!-- ลูปเพื่อแสดงผลลัพธ์การค้นหาทุกตัว -->
+                    {% set parts = result.split(":") %} <!-- แยกข้อความที่ได้จากผลลัพธ์การค้นหาเป็นสองส่วน -->
+                    <tr>
+                        <td>{{ parts[0] }}</td> <!-- แสดงหัวข้อในคอลัมน์แรก -->
+                        <td>{{ parts[1] }}{{ parts[2] }}</td> <!-- แสดงรายละเอียดในคอลัมน์ที่สอง -->
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% endif %}
+        </tbody>
+    </table>
+
+</body>
+
+</html>

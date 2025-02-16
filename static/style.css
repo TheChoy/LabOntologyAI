@@ -1,0 +1,95 @@
+/* ตั้งค่าเบื้องต้น */
+body {
+    font-family: Arial, sans-serif; /* กำหนดฟอนต์ให้เป็น Arial หรือ sans-serif ถ้าไม่พบ Arial */
+    background-color: #f3e9d893; /* สีพื้นหลังของหน้า */
+    color: #533f38; /* สีตัวอักษร */
+    margin: 0; /* ไม่มีระยะขอบรอบตัวเว็บไซต์ */
+    padding: 0; /* ไม่มีการเว้นระยะจากขอบ */
+    text-align: center; /* จัดข้อความให้ตรงกลาง */
+}
+
+/* ฟอร์มการค้นหา */
+h2 {
+    color: #533f38; /* กำหนดสีข้อความหัวข้อ */
+    font-size: 2em; /* ขนาดฟอนต์หัวข้อ */
+    margin-bottom: 10px; /* เว้นระยะด้านล่างของหัวข้อ */
+}
+
+form {
+    margin-top: 5px; /* เว้นระยะด้านบนของฟอร์ม */
+    margin-bottom: 5px; /* เว้นระยะด้านล่างของฟอร์ม */
+}
+
+input[type="text"] {
+    padding: 10px; /* กำหนดระยะขอบภายในช่องข้อความ */
+    font-size: 16px; /* ขนาดฟอนต์ของช่องค้นหา */
+    width: 300px; /* กำหนดความกว้างของช่องค้นหา */
+    border-radius: 20px; /* มุมโค้งของกรอบช่องค้นหา */
+    border: 1px solid #ccc; /* กำหนดสีและขนาดขอบของช่องค้นหา */
+    margin-right: 10px; /* เว้นระยะด้านขวาของช่องค้นหา */
+}
+
+button {
+    padding: 10px 20px; /* กำหนดระยะขอบภายในปุ่ม */
+    font-size: 16px; /* ขนาดฟอนต์ในปุ่ม */
+    background-color: #aab5a7; /* สีพื้นหลังของปุ่ม */
+    color: #ffffff; /* สีของตัวอักษรในปุ่ม */
+    border: none; /* ไม่มีขอบรอบปุ่ม */
+    border-radius: 10px; /* มุมโค้งของปุ่ม */
+    cursor: pointer; /* แสดง cursor แบบ pointer เมื่อ hover */
+}
+
+button:hover {
+    background-color: #e0e2d7; /* เปลี่ยนสีพื้นหลังของปุ่มเมื่อ hover */
+}
+
+a {
+    color: #533f38; /* กำหนดสีของลิงค์ */
+    text-decoration: none; /* ไม่ให้มีเส้นใต้ลิงค์ */
+    margin: 5px; /* เว้นระยะรอบๆ ลิงค์ */
+}
+
+a:hover {
+    color: #aab5a7; /* เปลี่ยนสีของลิงค์เมื่อ hover */
+}
+
+/* ตารางผลลัพธ์ */
+table {
+    width: 60%; /* กำหนดความกว้างของตาราง */
+    margin: auto; /* จัดตารางให้อยู่กลางหน้า */
+    border-collapse: collapse; /* ไม่ให้ขอบตารางซ้อนกัน */
+    margin-top: 15px; /* เว้นระยะด้านบนของตาราง */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาของตาราง */
+}
+
+th, td {
+    border: 1px solid #533f38; /* กำหนดขอบสีของเซลล์ตาราง */
+    padding: 12px 20px; /* กำหนดระยะขอบภายในเซลล์ตาราง */
+    text-align: left; /* จัดข้อความในเซลล์ให้ชิดซ้าย */
+    font-size: 16px; /* ขนาดฟอนต์ของข้อความในเซลล์ */
+}
+
+th {
+    background-color: #be8e60; /* สีพื้นหลังของหัวตาราง */
+    text-align: center; /* จัดข้อความในหัวตารางให้กึ่งกลาง */
+    color: #ffffff; /* สีข้อความในหัวตาราง */
+}
+
+tr:nth-child(even) {
+    background-color: #b8c5ad; /* เปลี่ยนสีพื้นหลังของแถวคู่ */
+}
+
+tr:nth-child(odd) {
+    background-color: #e0e2d7; /* เปลี่ยนสีพื้นหลังของแถวคี่ */
+}
+
+tr:hover {
+    background-color: #f5e6d9; /* เปลี่ยนสีพื้นหลังของแถวเมื่อ hover */
+}
+
+/* การแสดงข้อความ */
+h3 {
+    font-size: 1.5em; /* ขนาดฟอนต์ของหัวข้อที่สาม */
+    margin-bottom: 5px; /* เว้นระยะด้านล่างของหัวข้อที่สาม */
+    color: #533f38; /* กำหนดสีของหัวข้อที่สาม */
+}
